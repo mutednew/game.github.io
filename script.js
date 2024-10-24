@@ -10,15 +10,15 @@ let cards = [
     {src: 'image/game-card/T.png', value: 11},
 ];
 
-window.onload = () => {
+setTimeout(() => {
     let username = prompt('Enter username:');
-
+    
     if (username) {
         document.getElementById('username').innerHTML = username;
     } else {
         document.getElementById('username').innerHTML = 'Player';
     }
-};
+}, 100);
     
 function getRandomCard() {
     let randIndex = Math.floor(Math.random() * cards.length);
